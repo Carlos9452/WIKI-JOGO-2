@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-cadastro.css">
+</head>
+<body>
+    
+
+<form method="post" action="./participante-cadastro.php"><br>
+<h1>CADASTRE-SE</h1><br>
+<input type="text" name="nome" size="40" placeholder="Nome"><br>
+<input type="text" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00"><br>
+<input type="date" name="data_nascimento"><br>
+<input type="text" name="celular" required placeholder="(00) 00000-0000"><br>
+<input type="text" name="email" size="20"><br>
+<input type="text" name="Cidade"><br>
+<select name="Estado"><br>
+        <option value="AC">Acre</option>
+         <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+           <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+             <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+               <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                 <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                   <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                     <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                   <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                 <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+               <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+             <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+           <option value="SC">Santa Catarina</option>
+          <option value="SP" selected>São Paulo</option>
+         <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+   </select>     
+       <input type="submit" name="cadastro"value="Cadastrar participantes" name="Cadastrar">
+       <input type="reset"  name="resetar"value="Limpar dados">
+</body>
+</html>

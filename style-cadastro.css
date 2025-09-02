@@ -1,0 +1,121 @@
+/* Variáveis CSS para consistência */
+:root {
+    --primary-dark: #000000;
+    --primary-light: #323030;
+    --accent: #ffffff;
+    --text-dark: #000000;
+    --text-light: #f4f4f4;
+    --background: #f4f4f4;
+    --card-bg: #ffffff;
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Reset e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+form {
+    background-color: #2d2d2d;
+    width: 100%;
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    height: 850px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* Estilização dos campos de entrada */
+input, select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background-color: #3d3d3d;
+    color: #e0e0e0;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: white;
+    box-shadow: 0 0 0 2px rgba(107, 142, 204, 0.2);
+}
+
+input::placeholder {
+    color: #999;
+}
+
+/* Estilização específica para os botões */
+input[name="resetar"], input[name="cadastro"] {
+    background-color: #3a3a3a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #666;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15)
+    transition var(--transition);
+}
+
+input[type="reset"] {
+    background-color: #3a3a3a;
+}
+
+input[type="reset"]:hover {
+    background-color: #666;
+}
+
+/* Estilização do select */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e0e0e0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+    padding-right: 40px;
+}
+
+/* Melhorias de responsividade */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+    
+    input, select {
+        padding: 12px;
+    }
+}
